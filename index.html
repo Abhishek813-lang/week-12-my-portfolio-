@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+     <link rel="stylesheet" href="index.css">
+     <script src="https://kit.fontawesome.com/616c85a7ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#content">Lets Chat</a></li>  
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Namaste,</p>
+                <h1>It's Me <span> ' अभिषेक ' </span></h1>
+            </div> 
+        </div>
+    </div>
+    
+    <!-- ----------about---------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an energetic, ambitions person who has developed a mature and responsible approach to any task that I undertake, or situation that I am presented with.
+                    </p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>   
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Music Production</span><br>logic proX / Garage Band </li>
+                            <li><span>Video Editing</span><br>VN / flimmora </li>
+                            <li><span>Programming Language</span><br>HTML,Css & JavaScript / Java / Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018 AD</span><br>Bambo Resturant</li>
+                            <li><span>2021 AD</span><br>Dancing Yak</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 AD</span><br>SEE( Secondary Education Examination )</li>
+                            <li><span>2022 AD</span><br>+2 Graduate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- --------------------Achivments------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> Achivments</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-medal"></i>
+                    <h2>Sports</h2>
+                    <p></p>
+                    <a href="#"></a>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h2>music</h2>
+                    <p></p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-building-columns"></i>
+                    <h2>Education</h2>
+                    <p></p>
+                    <a href="#"></a>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- <--------------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Heros</h1>
+            <div class="work-list">
+                <div class="work">
+                     <img src="mom.png">
+                     <div class="layer">
+                        <h3>आमा</h3>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="both.png" >
+                    
+                </div> 
+                <div class="work">
+                    <img src="dad.png" >
+                    <div class="layer">
+                        <h3>बुबा </h3>
+                     </div>
+                </div>    
+           </div>
+        </div>
+     </div>
+     <!-- ------------------lets chat ---------------------- -->
+     <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>contact me</h1>
+                    <P><i class="fa-sharp fa-solid fa-paper-plane"></i>kcabhiekh@gmail.com</P>
+                    <P><i class="fa-solid fa-phone"></i>+977 9823189012</P>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my cv.pdf" download class="btw btw2">Download CV</a>
+                </div>
+             
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email"required>
+                        <textarea name="message"  rows="6" placeholder=" Your message"></textarea>
+                        <button type="submit" class="btw btw2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright <i class="fa-solid fa-copyright"></i> अभिषेक</p>
+        </div>
+     </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+       
+
+</script>
+ 
+</body>
+</html>
